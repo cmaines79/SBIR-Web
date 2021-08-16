@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9f6600aa80.js" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js" defer></script>
+    <title>SBIR Research Tool</title>
+</head>
+<body>
+    <!-- header and navigations starts here -->
+    <div class="container">
+        <header>
+            <div class="alert-message">
+                <div class="alert-icon fas fa-exclamation-triangle"></div>
+                <div class="alert-content">
+                    <h4>The use of a CORS browser extension is required for this tool to work properly</h4>
+                </div>
+            </div>    
+            <nav class="navbar">
+                <div class="logo-wrapper">
+                    <a href="/" title="home"><img src="/images/sbir-sttr-logo.svg" alt="sbir-sttr-logo"></a>
+                </div>
+                <div class="link-wrapper">
+                    <!-- save this for login, search, etc links -->
+                    <div class="menu">
+                        <ul class="nav-button">
+                            <li><button class="btn nav-btn-active">Awards</button></li>
+                            <li><button class="btn">Firms</button></li>
+                            <li><button class="btn">Solicitations</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- body starts here -->
+    <div class="main container">
+        <div class="query-selector">
+            <h1 id="query-title">Awards</h1>
+
+            <!-- start awards side menu -->
+            <div class="query-sub query-active">
+                <div class="query-btn agency-search">
+                    <button class="query-btn btn query-btn-active">Agency Search</button>
+                </div>
+                <div class="query-btn company-search">
+                    <button class="query-btn btn">Company Search</button>
+                </div>
+                <div class="query-btn ResearchInstitue-search">
+                    <button class="query-btn btn">Research Institute Search</button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="query-results">
+
+            <!-- start awards query options -->
+            <div class="awards-query-options">
+                <div>
+                    <h3>Pick an Agency to see their awards</h3>
+                    <form class="agency-radio" action="">
+                        <input type="radio" name="agency-option" id="DOD" checked='true'>
+                        <label for="DOD">Department of Defense</label><br>
+                        <input type="radio" name="agency-option" id="HHS">
+                        <label for="HHS">Department of Health and Human Services</label><br>
+                        <input type="radio" name="agency-option" id="NASA">
+                        <label for="NASA">National Aeronautics and Space Administration</label><br>
+                        <input type="radio" name="agency-option" id="NSF">
+                        <label for="NSF">National Science Foundation</label><br>
+                        <input type="radio" name="agency-option" id="DOE">
+                        <label for="DOE">Department of Energy</label><br>
+                        <input type="radio" name="agency-option" id="USDA">
+                        <label for="USDA">Department of Argiculture</label><br>
+                        <input type="radio" name="agency-option" id="EPA">
+                        <label for="EPA">Enviornmental Protection Agency</label><br>
+                        <input type="radio" name="agency-option" id="ED">
+                        <label for="ED">Department of Education</label><br>
+                        <input type="radio" name="agency-option" id="DOT">
+                        <label for="DOT">Department of Transportation</label><br>
+                        <input type="radio" name="agency-option" id="DHS">
+                        <label for="DHS">Department of Homeland Security</label><br>
+                    </form>
+                </div>
+                <div id="query-option-two"> 
+                    <h3>Pick a year for the award period</h3>
+                    <form action="" class='year-radio'>
+                        <input type="radio" name="year-option" id="2021" checked='true'>
+                        <label for="2021">2021</label><br>
+
+                        <input type="radio" name="year-option" id="2020">
+                        <label for="2020">2020</label><br>
+
+                        <input type="radio" name="year-option" id="2019">
+                        <label for="2019">2019</label><br>
+                    </form>
+                    <button id='awards-query-search' class="btn">Search</button>
+                </div>
+            </div>
+
+            <div class="results">
+                <!-- javascript fabricated html goes here -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer starts here -->
+    <div class="footer container">
+        <h4>Proudly written by Maines Industries</h4>
+    </div>
+    
+</body>
+</html>

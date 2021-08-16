@@ -1,0 +1,172 @@
+/* GLOBAL VARIABLES */
+:root{
+    --main-bg-color: #f4f4f4;
+    --secondary-bg-color: #fff;
+    --main-accent-color: #115a8b;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER AND NAV CSS STARTS HERE */
+.container{
+    max-width: 1200px;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    padding: 0 0.9375rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alert-message{
+    width: 100%;
+    display: flex;
+    padding: 1.5625rem 0.3125rem;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(251, 208, 74);
+}
+
+.alert-icon{
+    margin: 0 10px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.9375rem 0px;
+}
+
+.link-wrapper{
+    width: 50%;
+    display: flex;
+    align-self: flex-end;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: flex;
+    margin: 0 0.3125rem;
+}
+
+.btn{
+    background-color: var(--main-bg-color) ;
+    border: none;
+    font-size: 1.25rem;
+    padding: 0.625rem 0.9375rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: var(--main-accent-color);
+    color: white;
+}
+
+.nav-btn-active{
+    background: var(--main-accent-color);
+    color: white;
+}
+
+
+/* BODY CSS STARTS HERE */
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-bg-color);
+    padding: 0.9375rem;
+}
+
+.query-selector{
+    width: 30%;
+    padding: 0.9375rem;
+    background-color: var(--secondary-bg-color);
+}
+
+#query-title{
+    color: var(--main-accent-color);
+}
+
+.query-sub{
+    width: 100%;
+    margin: 0.625rem 0;
+}
+
+.query-btn{
+    width: 100%;
+    text-align: start;
+}
+
+.query-btn-active{
+    background: var(--main-accent-color);
+    color: white;
+}
+
+.awards-query-options{
+    display: flex;
+    flex-direction: row;
+}
+
+.agency-radio{
+    margin-top: 1.25rem;
+}
+
+.year-radio{
+    margin-top: 1.25rem;
+}
+
+#query-option-two{
+    margin-left: 2rem;
+}
+
+#awards-query-search{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.query-results{
+    width: 70%;
+    padding: 0.9375rem;
+    background-color: var(--secondary-bg-color);
+}
+
+.results a{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+    background-color: var(--main-bg-color);
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* FOOTER CSS STARTS HERE */
+.footer{
+    padding: 0.9375rem;
+    justify-content: center;
+}
